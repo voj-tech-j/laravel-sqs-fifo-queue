@@ -31,12 +31,12 @@
     },
     "autoload": {
         "psr-4": {
-            "ShiftOneLabs\\LaravelSqsFifoQueue\\": "src/"
+            "VojTechJ\\LaravelSqsFifoQueue\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ShiftOneLabs\\LaravelSqsFifoQueue\\Tests\\": "tests/"
+            "VojTechJ\\LaravelSqsFifoQueue\\Tests\\": "tests/"
         }
     },
     "config": {
@@ -46,7 +46,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "ShiftOneLabs\\LaravelSqsFifoQueue\\LaravelSqsFifoQueueServiceProvider"
+                "VojTechJ\\LaravelSqsFifoQueue\\LaravelSqsFifoQueueServiceProvider"
             ]
         }
     }

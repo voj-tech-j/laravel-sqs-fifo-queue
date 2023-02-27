@@ -1,11 +1,11 @@
 <?php
 
-namespace ShiftOneLabs\LaravelSqsFifoQueue\Tests;
+namespace VojTechJ\LaravelSqsFifoQueue\Tests;
 
 use InvalidArgumentException;
-use ShiftOneLabs\LaravelSqsFifoQueue\Support\Arr;
-use ShiftOneLabs\LaravelSqsFifoQueue\SqsFifoQueue;
-use ShiftOneLabs\LaravelSqsFifoQueue\Queue\Connectors\SqsFifoConnector;
+use VojTechJ\LaravelSqsFifoQueue\Support\Arr;
+use VojTechJ\LaravelSqsFifoQueue\SqsFifoQueue;
+use VojTechJ\LaravelSqsFifoQueue\Queue\Connectors\SqsFifoConnector;
 
 class ConnectorTest extends TestCase
 {

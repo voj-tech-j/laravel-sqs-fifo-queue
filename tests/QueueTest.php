@@ -1,6 +1,6 @@
 <?php
 
-namespace ShiftOneLabs\LaravelSqsFifoQueue\Tests;
+namespace VojTechJ\LaravelSqsFifoQueue\Tests;
 
 use Aws\Result;
 use Mockery as m;
@@ -10,12 +10,12 @@ use InvalidArgumentException;
 use Illuminate\Support\Collection;
 use Illuminate\Mail\SendQueuedMailable;
 use Illuminate\Queue\CallQueuedHandler;
-use ShiftOneLabs\LaravelSqsFifoQueue\SqsFifoQueue;
+use VojTechJ\LaravelSqsFifoQueue\SqsFifoQueue;
 use Illuminate\Notifications\SendQueuedNotifications;
-use ShiftOneLabs\LaravelSqsFifoQueue\Tests\Fakes\Job;
-use ShiftOneLabs\LaravelSqsFifoQueue\Tests\Fakes\Mail;
-use ShiftOneLabs\LaravelSqsFifoQueue\Tests\Fakes\StandardJob;
-use ShiftOneLabs\LaravelSqsFifoQueue\Tests\Fakes\Notification;
+use VojTechJ\LaravelSqsFifoQueue\Tests\Fakes\Job;
+use VojTechJ\LaravelSqsFifoQueue\Tests\Fakes\Mail;
+use VojTechJ\LaravelSqsFifoQueue\Tests\Fakes\StandardJob;
+use VojTechJ\LaravelSqsFifoQueue\Tests\Fakes\Notification;
 
 class QueueTest extends TestCase
 {
@@ -597,7 +597,7 @@ class QueueTest extends TestCase
     protected function bind_custom_deduplicator()
     {
         $this->app->bind('queue.sqs-fifo.deduplicator.custom', function () {
-            return new \ShiftOneLabs\LaravelSqsFifoQueue\Queue\Deduplicators\Callback(function ($payload, $queue) {
+            return new \VojTechJ\LaravelSqsFifoQueue\Queue\Deduplicators\Callback(function ($payload, $queue) {
                 return 'custom';
             });
         });

@@ -1,6 +1,6 @@
 <?php
 
-namespace ShiftOneLabs\LaravelSqsFifoQueue\Tests;
+namespace VojTechJ\LaravelSqsFifoQueue\Tests;
 
 use Illuminate\Support\Str;
 
