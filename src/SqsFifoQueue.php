@@ -11,7 +11,7 @@ use Illuminate\Queue\SqsQueue;
 use Illuminate\Mail\SendQueuedMailable;
 use Illuminate\Queue\CallQueuedHandler;
 use ShiftOneLabs\LaravelSqsFifoQueue\Support\Arr;
-use ShiftOneLabs\LaravelSqsFifoQueue\Support\Str;
+use Illuminate\Support\Str;
 use Illuminate\Notifications\SendQueuedNotifications;
 use ShiftOneLabs\LaravelSqsFifoQueue\Contracts\Queue\Deduplicator;
 
